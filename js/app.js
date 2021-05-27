@@ -1,4 +1,4 @@
-baguetteBox.run('gallery')
+baguetteBox.run('#gallery')
 
   function searchFilter() {
       let input;
