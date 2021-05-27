@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   }
-  #search {
+  #myInput {
     display: block;
     margin: auto;
     width: 200px;
@@ -12,24 +12,28 @@
     background-color: #f2f2f2;
     transition: all .2s;
   }
+#myInput:focus {
+  border: 2px solid #e2e2e2;
+  box-shadow: 2px 2px 3px #000000;
+  background-color: white;
+}
   .container {
-    max-width: 1024px;
+    max-width: 880px;
     margin: 0 auto;
     width: 87%;
   }
-  .gallery {
+  #gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    grid-gap: 20px;
+    grid-gap: 10px;
   }
-  .gallery-image {
+  .photo {
     max-width: 100%;
-    max-height: auto;
   }
 
   @media (min-width: 768px) {
 
-    input {
+    #search {
       width: 460px;
     }
 
